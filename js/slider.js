@@ -85,7 +85,7 @@ function initParticipantsSlider() {
   const currentNumberEl = document.querySelector('.slide-number');
   const totalNumberEl = document.querySelector('.slide-number__all');
 
-  // оригиналы ДО клонов (ВАЖНО)
+  // оригиналы до клонов (ВАЖНО)
   const originalSlides = [...track.querySelectorAll('.participant-card')];
 
   const visibleSlides = 3;
@@ -102,7 +102,7 @@ function initParticipantsSlider() {
   lastClones.reverse().forEach(clone => track.prepend(clone));
   firstClones.forEach(clone => track.append(clone));
 
-  // теперь ВСЕ элементы трека (включая клоны)
+  // все элементы трека (включая клоны)
   const slides = [...track.children];
 
   let index = visibleSlides;
