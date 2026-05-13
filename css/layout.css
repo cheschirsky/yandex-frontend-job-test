@@ -1,0 +1,22 @@
+.container {
+  width: min(100% - 40px, var(--container-width));
+  margin-inline: auto;
+}
+
+.align-center {
+  text-align:center;
+}
+.align-right {
+  text-align:right;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,38 @@
+.ticker {
+  overflow: hidden;
+  background: var(--color-accent);
+  color: white;
+  white-space: nowrap;
+}
+
+.ticker__track {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  height:60px;
+  line-height: 1.1;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  padding-block: 18px;
+  animation: ticker 20s linear infinite;
+  align-items: center;
+}
+
+.ticker__round {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

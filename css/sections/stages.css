@@ -1,0 +1,66 @@
+.stages {
+  padding-top: 180px;
+  padding-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.plane {
+  position: absolute;
+  right: -63px;
+  bottom: 0;
+  width: 401px;
+  pointer-events: none;
+  will-change: transform;
+  z-index: 1;
+}
+
+.stages__grid {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stage-card {
+  padding: 20px 21px 20px 20px;
+  background: url(../../assets/stage.png) left top / cover no-repeat;
+  display: flex;
+  gap: 16px;
+  min-height:112px;
+}
+
+.stage-card:nth-of-type(3) {
+  grid-row: span 2;
+}
+
+.stage-card:nth-of-type(7) {
+  grid-column: span 2;
+}
+
+.stage-card:nth-of-type(7) p {
+  max-width: 430px;
+}
+
+.stage-card__number {
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:white;
+  display: flex;
+  font-size:20px;
+  font-weight:600;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage-card p {
+  font-size:20px;
+  font-weight:500;
+  line-height:1.2;
+}
+
+.stage__controls {
+  display:none;
+}

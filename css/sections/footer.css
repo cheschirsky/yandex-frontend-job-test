@@ -1,0 +1,9 @@
+.footer {
+  height:150px;
+  padding-block: 40px;
+  background: var(--color-bg);
+}
+
+.footer p {
+  opacity:0.6;
+}
