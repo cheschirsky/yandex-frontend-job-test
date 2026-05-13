@@ -4,7 +4,7 @@
 
 ## 🔗 Демо
 
-https://cheschirsky-yandex-frontend-job-test.vercel.app
+https://yandex-frontend-job-test.vercel.app/
 
 ## 📌 О проекте
 
